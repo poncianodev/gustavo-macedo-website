@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
 
 :root {
   --main-dark-color: #1D3237;
@@ -16,11 +16,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 body {
   background-color: var(--white-color);
+
 }
 
 header {
@@ -88,9 +89,10 @@ span {
 }
 
 .hero-text h1 {
-  font-size: 2.5rem;
+  font-size: clamp(2.0625rem, 0.7717rem + 5.163vw, 3.25rem);
   color: var(--main-light-color);
   text-shadow: var(--dark-shadow);
+  font-weight: 600;
 }
 
 .hero-text p {
@@ -98,6 +100,7 @@ span {
   text-shadow: var(--dark-shadow);
   font-size: 1.1rem;
   font-weight: 300;
+  max-width: 90%;
 }
 
 .hero-btn-container {
@@ -106,39 +109,35 @@ span {
   gap: 2rem;
 }
 
-.hero-button {
+.hero-button,
+.hero-button2 {
   display: inline-block;
-  padding: 1rem;
-  background-color: var(--second-light-color);
-  border: var(--second-light-color) 1px solid;
-  color: var(--main-dark-color);
-  text-decoration: none;
-  max-width: 100%;
-  font-size: 1rem;
+  padding: 14px 28px;
   font-weight: 600;
   border-radius: 1rem;
   text-align: center;
   transition: all 0.3s ease;
+  min-width: 11rem;
+}
+
+.hero-button {
+  background-color: var(--second-light-color);
+  border: var(--second-light-color) 1px solid;
+  color: var(--main-dark-color);
+  text-decoration: none;
 }
 
 .hero-button:hover {
   background-color: var(--third-dark-color);
   border: var(--third-dark-color) 1px solid;
+  color: var(--main-light-color);
 }
 
 .hero-button2 {
-  display: inline-block;
-  padding: 1rem;
   background-color: transparent;
   border: var(--main-light-color) 1px solid;
   color: var(--main-light-color);
   text-decoration: none;
-  width: 10rem;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 1rem;
-  text-align: center;
-  transition: background-color 0.3s ease;
 }
 
 .hero-button2:hover {
@@ -148,5 +147,4 @@ span {
 
 .hero-photo {
   width: 27rem;
-  object-fit: cover;
 }
