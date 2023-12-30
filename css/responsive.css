@@ -5,7 +5,6 @@
 }
 
 @media (max-width: 1012px) {
-
   .hero-text {
     text-align: center;
     justify-content: center;
@@ -37,6 +36,34 @@
 
   .hero-button2 {
     padding: .8rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-text {
+    width: 90%;
+  }
+
+  .about-text h2 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 870px) {
+  .menu-btn {
+    display: none;
+  } 
+
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 870px) {
+  .desktop-menu {
+    display: none;
   }
 }
 

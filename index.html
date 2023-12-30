@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="./css/responsive.css">
+  <script src="https://kit.fontawesome.com/b536156055.js" crossorigin="anonymous"></script>
   <title>Gustavo Macedo</title>
 </head>
 
@@ -14,12 +15,27 @@
     <nav class="header-nav">
       <img src="./assets/images/GM.svg" alt="Logo Gustavo Macedo">
 
-      <ul>
+      <ul class="desktop-menu">
         <li><a href="#">Início</a></li>
         <li><a href="#">Sobre mim</a></li>
         <li><a href="#">Serviços</a></li>
         <li><a href="#">Contato</a></li>
       </ul>
+
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="close-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <ul>
+          <li><a href="#" class="mobile-click">Início</a></li>
+          <li><a href="#" class="mobile-click">Sobre Mim</a></li>
+          <li><a href="#" class="mobile-click">Serviços</a></li>
+          <li><a href="#" class="mobile-click">Contato</a></li>
+        </ul>
     </nav>
   </header>
 
@@ -43,8 +59,32 @@
       </div>
     </section>
 
-    
+    <section id="about-me">
+      <div class="about-container">
+        <img src="./assets/images/gustavo-image-1.JPG" alt="Foto de uma consultoria empresarial">
+        <div class="about-text">
+          <h2>Olá, sou Gustavo Macedo!</h2>
+
+          <p>
+            Sou pesquisador, professor universitário e consultor da ONU e de empresas,
+            especializado em inteligência
+            artificial, diplomacia científica, segurança internacional e direitos humanos.
+
+            Com vasta experiência nos setores público e privado, colaborei com organizações internacionais como ONU e
+            OTAN.
+            Formado em primeiro lugar pela UNICAMP/Universidade de Londres, possuo doutorado e mestrado em Ciência
+            Política pela
+            USP/Columbia University de Nova York.
+
+            Fui pesquisador visitante nos EUA, Canadá, Bélgica e Hungria,
+            e também atuei como pesquisador no Departamento de Prevenção de Atrocidades da ONU em Nova York.
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
