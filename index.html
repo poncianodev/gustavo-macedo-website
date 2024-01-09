@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="./css/responsive.css">
   <script src="https://kit.fontawesome.com/b536156055.js" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   <title>Gustavo Macedo</title>
 </head>
 
@@ -44,7 +45,7 @@
       <div class="hero-content">
         <div class="hero-text-container">
           <div class="hero-text">
-            <h1>A melhor <span>consultoria</span> para sua empresa</h1>
+            <h1>A melhor <span>consultoria</span> para sua empresa.</h1>
 
             <p>Vou te mostrar como a tecnologia pode impactar o seu negócio.</p>
 
@@ -63,28 +64,173 @@
       <div class="about-container">
         <img src="./assets/images/gustavo-image-1.JPG" alt="Foto de uma consultoria empresarial">
         <div class="about-text">
-          <h2>Olá, sou Gustavo Macedo!</h2>
+          <h2 class="section-heading">Olá, sou Gustavo Macedo!</h2>
 
           <p>
-            Sou pesquisador, professor universitário e consultor da ONU e de empresas,
-            especializado em inteligência
-            artificial, diplomacia científica, segurança internacional e direitos humanos.
-
-            Com vasta experiência nos setores público e privado, colaborei com organizações internacionais como ONU e
-            OTAN.
-            Formado em primeiro lugar pela UNICAMP/Universidade de Londres, possuo doutorado e mestrado em Ciência
-            Política pela
-            USP/Columbia University de Nova York.
-
-            Fui pesquisador visitante nos EUA, Canadá, Bélgica e Hungria,
-            e também atuei como pesquisador no Departamento de Prevenção de Atrocidades da ONU em Nova York.
+            Sou especialista em inteligência artificial, diplomacia cientifica e inovação.
+            Palestrante e consultor de empresas. Professor de administração e economia do INSPER, e professor de
+            relações internacionais do IBMEC. Consultor da ONU para inteligência artificial, e pesquisador da USP em
+            inovação, com vasta experiencia dentro e fora do Brasil no setor público e privado. Formado em primeiro
+            lugar pela UNICAMP/Universidade de Londres, possuo doutorado e mestrado pela USP/Columbia University de Nova
+            York. Fui pesquisador visitante nos EUA, Canadá, Bélgica e Hungria, além de atuar como pesquisador no
+            Departamento de Prevenção de Atrocidades da ONU de Nova York. Colaboro frequentemente com mídia nacional e
+            internacional sobre temas atuais.
           </p>
         </div>
       </div>
+
+      <div class="logos">
+        <div class="logos-slide">
+          <a href="https://www.un.org/en/" target="_blank"><img src="./assets/images/logo-onu.svg" /></a>
+          <a href="https://www.nato.int/" target="_blank"><img src="./assets/images/logo-otan.svg" /></a>
+          <a href="https://www.unesco.org/en" target="_blank"><img src="./assets/images/logo-unesco.svg" /></a>
+          <a href="https://www5.usp.br/" target="_blank"><img src="./assets/images/usp-logo.svg" /></a>
+          <a href="https://www.insper.edu.br/" target="_blank"><img src="./assets/images/insper-logo.png" /></a>
+          <a href="https://www.ibmec.br/" target="_blank"><img src="./assets/images/ibmec.svg" /></a>
+        </div>
+      </div>
+    </section>
+    <section id="my_work">
+      <div class="my_work_area">
+        <div class="my_work_text">
+          <h2 class="section-heading">Especialidades</h2>
+
+          <p>De qual forma podemos melhorar a performance da sua empresa através da Inteligencia Artificial</p>
+        </div>
+
+
+        <div class="my_work_cards">
+          <div class="card" onclick="rotateOnClick(this)">
+            <i class="fa-solid fa-shuttle-space fa-rotate-270"></i>
+            <h3>Performance Empresarial</h3>
+          </div>
+
+          <div class="card" onclick="rotateOnClick(this)">
+            <i class="fa-solid fa-code-branch"></i>
+            <h3>Inteligencia Artificial</h3>
+          </div>
+
+          <div class="card" onclick="rotateOnClick(this)">
+            <i class="fa-solid fa-briefcase"></i>
+            <h3>Consultoria</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="service_area">
+        <div class="service_text">
+          <h2 class="section-heading">Como posso ajudar sua empresa</h2>
+          <p>Você já parou para pensar em como a Inteligência Artificial pode ser a chave para superar
+            os desafios e impulsionar o crescimento da sua empresa?</p>
+        </div>
+
+        <div class="card-container">
+          <div class="s_card">
+            <div class="card-content">
+              <div class="card-title">Maximize a Eficiência Operacional</div>
+              <div class="card-text">A Inteligência Artificial
+                automatiza tarefas
+                repetitivas, liberando
+                sua equipe para focar
+                em atividades
+                estratégicas.</div>
+            </div>
+            <img src="assets/images/service_cover1.png" alt="Imagem do Card 1">
+          </div>
+
+          <div class="s_card">
+            <div class="card-content">
+              <div class="card-title">Tomada de Decisão Inteligente</div>
+              <div class="card-text">Com algoritmos
+                avançados, a Inteligência
+                Artificial analisa dados
+                complexos e extrai
+                insights valiosos</div>
+            </div>
+            <img src="assets/images/service_cover2.png" alt="Imagem do Card 2">
+          </div>
+
+          <div class="s_card">
+            <div class="card-content">
+              <div class="card-title">Personalização Excepcional</div>
+              <div class="card-text">A IA analisa o
+                comportamento
+                do usuário, antecipando
+                suas necessidades e
+                entregando soluções
+                sob medida</div>
+            </div>
+            <img src="assets/images/service_cover3.png" alt="Imagem do Card 3">
+          </div>
+
+          <div class="s_card">
+            <div class="card-content">
+              <div class="card-title">ROI Impressionante</div>
+              <div class="card-text">Obtenha um retorno
+                sólido sobre seu
+                investimento, otimizando
+                processos e
+                impulsionando resultados.</div>
+            </div>
+            <img src="assets/images/service_cover4.png" alt="Imagem do Card 4">
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="benefits">
+      <h2 class="section-heading">
+        Por que escolher minha consultoria?
+      </h2>
+
+      <div class="benefits-container">
+
+        <img src="./assets/images/gustavo-consulting.jpeg" alt="Consultoria ministrada por Gustavo Macedo"
+        class="gustavo-consulting">
+
+        <div class="benefits-text-container">
+          <div class="benefits-text">
+              <h3>Otimização de Processos</h3>
+              <p>Vou análisar os processos internos da sua empresa e indentificar áreas que possam ser otimizadas,
+                resultando em economia de tempo e redução de gastos.</p>
+          </div>
+          <div class="benefits-text">
+              <h3>Tomada de Decisões Estratégicas</h3>
+              <p>A inteligência artificial permite a análise de grandes volumes de dados em tempo real. Isso permite
+                implementar sistemas que coletam dados e fornecer insights valiosos.
+              </p>
+          </div>
+          <div class="benefits-text">
+              <h3>Inovação e Vantagem Competitiva</h3>
+              <p>Ao adotar soluções de inteligencia artificial, sua empresa se posicionará na vanguarda da inovação.
+                Posso te ajudar a implementar tecnologias como machine learning, para que seu negócio desenvolva
+                produtos
+                e serviços inovadores.
+              </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="media">
+      <div class="custom-shape-divider-top-1704413259">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+
+      <div class="media-area">
+        <h2 class="media-heading">Palestras e contribuções na mídia</h2>        
+      </div>
     </section>
   </main>
-
+  
   <script src="./js/main.js"></script>
 </body>
-
 </html>
