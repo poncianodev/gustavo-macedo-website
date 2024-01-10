@@ -1,13 +1,10 @@
 @media (max-width: 1200px) {
-  .gustavo-consulting {
-    max-width: 30rem;
-    height: 20rem;
-  }
+
 }
 
 @media (max-width: 1024px) {
   #benefits {
-    padding: 1.5rem 2rem 5rem;
+    padding: 5rem 1rem 5rem;
   }
 
   .benefits-container {
@@ -15,13 +12,8 @@
   }
 
   .benefits-text-container {
-    width: 90%;
-  }
-
-  .gustavo-consulting {
-    height: 100%;
-    max-width: 40rem;
-    margin: -1rem 1rem 5rem ;
+    margin-top: 3rem;
+    width: 80%;
   }
 }
 
@@ -101,15 +93,7 @@
 }
 
 @media (max-width: 768px) {
-  .benefits-text {
-    width: 90%;
-  }
 
-  .gustavo-consulting {
-    height: 100%;
-    max-width: 30rem;
-    margin: -1rem 1rem 5rem ;
-  }
 }
 
 @media (max-width: 600px) {
@@ -141,13 +125,17 @@
     font-size: 1.5rem;
   }
 
-  .gustavo-consulting {
-    height: 100%;
-    max-width: 30rem;
-    margin: -1rem 1rem 5rem ;
-  }
-
   .benefits-text {
     width: 100%;
+  }
+
+  .gustavo-consulting {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .gustavo-consulting {
+    width: 15rem;
   }
 }
