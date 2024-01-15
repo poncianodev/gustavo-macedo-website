@@ -10,6 +10,24 @@ window.onload = function () {
   });
 };
 
+// BOTÃO WHATS
+
+let whatsBtn = document.querySelector('.whatsapp-btn');
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 100) {
+    whatsBtn.classList.add('show');
+  } else {
+    whatsBtn.classList.remove('show');
+  }
+});
+whatsBtn.addEventListener('click', function (e) {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth',
+  });
+});
+
 // MENU MOBILE
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -23,16 +41,19 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileMenu.style.display = 'block';
     mobileMenu.style.animation = 'showMenu 1s forwards';
     menuBtnI.style.opacity = '0';
+    whatsBtn.classList.remove('show');
   });
 
   closeBtn.addEventListener('click', () => {
     mobileMenu.style.animation = 'hideMenu 1s forwards';
     menuBtnI.style.opacity = '1';
+    whatsBtn.classList.add('show');
   });
 
   mobileMenuClick.addEventListener('click', () => {
     mobileMenu.style.animation = 'hideMenu 1s forwards';
     menuBtnI.style.opacity = '1';
+    whatsBtn.classList.add('show');
   });
 });
 
@@ -52,22 +73,22 @@ function rotateOnClick(element) {
 
 // MEDIA SLIDER
 
-var swiper = new Swiper(".slide-container", {
+var swiper = new Swiper('.slide-container', {
   slidesPerView: 4,
   spaceBetween: 20,
   sliderPerGroup: 4,
   loop: true,
-  centerSlide: "true",
-  fade: "true",
-  grabCursor: "true",
+  centerSlide: 'true',
+  fade: 'true',
+  grabCursor: 'true',
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     clickable: true,
     dynamicBullets: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 
   breakpoints: {
@@ -85,3 +106,71 @@ var swiper = new Swiper(".slide-container", {
     },
   },
 });
+
+// FORM
+
+const form = document.getElementById('form');
+const inputs = document.querySelectorAll('.required');
+const spans = document.querySelectorAll('.span-required');
+const phoneRegex = /^\d{11}$/;
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+form.addEventListener('submit', event => {
+  if (!validateForm()) {
+    event.preventDefault();
+    openModal();
+  } else {
+    setTimeout(function () {
+      alert('Sua mensagem foi enviada!');
+    }, 2000);
+  }
+});
+
+function setError(index) {
+  inputs[index].style.border = '2px solid #e63636';
+  spans[index].style.display = 'block';
+}
+
+function removeError(index) {
+  inputs[index].style.border = '';
+  spans[index].style.display = 'none';
+}
+
+function nameValidate() {
+  if (inputs[0].value.length < 3) {
+    setError(0);
+  } else {
+    removeError(0);
+  }
+}
+
+function phoneValidate() {
+  if (phoneRegex.test(inputs[1].value)) {
+    removeError(1);
+  } else {
+    setError(1);
+  }
+}
+
+function emailValidate() {
+  if (emailRegex.test(inputs[2].value)) {
+    removeError(2);
+  } else {
+    setError(2);
+  }
+}
+
+function validateForm() {
+  nameValidate();
+  emailValidate();
+  phoneValidate();
+
+  const termsAccepted = termsValidate();
+
+  return !(
+    inputs[0].style.border ||
+    inputs[1].style.border ||
+    inputs[2].style.border ||
+    !termsAccepted
+  );
+}
