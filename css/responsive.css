@@ -77,12 +77,8 @@
     width: 50%;
   }
 
-  .footer-area {
-    padding: 1rem 2rem 3rem;
-  }
-
-  .footer-text {
-    text-align: justify;
+  #media {
+    padding-bottom: 3rem;
   }
 }
 
@@ -180,7 +176,11 @@
     }
 
     .footer-area {
-      padding: 3rem 1rem;
+      padding: 2rem 1rem 5rem;
+    }
+
+    .footer-text {
+      text-align: center;
     }
 
     .footer-area h2 {

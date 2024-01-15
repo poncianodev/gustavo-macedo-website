@@ -57,6 +57,7 @@ header {
 
 nav img {
   width: 3.5rem;
+  cursor: pointer;
 }
 
 .desktop-menu {
@@ -643,7 +644,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .slide-container {
@@ -785,7 +786,7 @@ footer {
 .footer-area {
   display: flex;
   justify-content: center;
-  padding: 3rem 2rem;
+  padding: 2rem 2rem 5rem; 
   gap: 5rem;
   flex-wrap: wrap;
 }
@@ -945,4 +946,10 @@ form button:hover {
 
 .credits a {
   color: var(--third-dark-color);
+  text-shadow: var(--light-shadow);
+  transition: .3s ease;
+}
+
+.credits a:hover {
+  color: var(--white-color);
 }
