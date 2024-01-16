@@ -358,7 +358,9 @@
       </div>
 
       <div class="form">
-        <form action="https://formspree.io/f/maygkzrr" method="POST" id="form">
+        <form action="https://api.staticforms.xyz/submit" method="post" id="form">
+          <input type="hidden" name="accessKey" value="e0422a0f-85cc-4b10-9087-1cb480cf0e5c">
+          <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/success.html">
           <input type="text" id="username" name="name" placeholder="Qual o seu nome?" class="inputs required"
             oninput="nameValidate()">
           <span class="span-required">O nome deve ter no mínimo 3 caracteres</span>
