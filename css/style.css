@@ -20,6 +20,19 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--third-light-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--second-dark-color);
+  border-radius: 2px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -786,7 +799,7 @@ footer {
 .footer-area {
   display: flex;
   justify-content: center;
-  padding: 2rem 2rem 5rem; 
+  padding: 2rem 2rem 5rem;
   gap: 5rem;
   flex-wrap: wrap;
 }
@@ -843,19 +856,20 @@ form button {
   width: 100%;
   margin: 1rem auto;
   padding: 1.1rem;
-  background-color: var(--second-dark-color);
+  background-color: var(--main-dark-color);
   color: var(--main-light-color);
   border: none;
   border-radius: 1rem;
   font-weight: bold;
   font-size: 1rem;
   cursor: pointer;
-  transition: 1s;
+  transition: .3s ease-in-out;
 }
 
 form button:hover {
-  background-color: var(--main-dark-color);
-  color: var(--second-dark-color);
+  background-color: var(--third-light-color);
+  color: var(--main-dark-color);
+  transform: scale(0.97);
 }
 
 .span-required {
@@ -863,27 +877,6 @@ form button:hover {
   display: none;
   margin: -.5rem auto;
   color: red;
-}
-
-/*CHECKBOX*/
-.checkbox {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: auto;
-}
-
-.checkbox input {
-  width: 1rem;
-  margin-right: 1rem;
-}
-
-.checkbox p {
-  font-size: 0.8rem;
-}
-
-.checkbox p a {
-  color: aqua;
 }
 
 /* END  */

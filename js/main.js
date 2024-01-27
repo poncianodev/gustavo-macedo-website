@@ -73,7 +73,7 @@ function rotateOnClick(element) {
 
 // MEDIA SLIDER
 
-var swiper = new Swiper('.slide-container', {
+let swiper = new Swiper('.slide-container', {
   slidesPerView: 4,
   spaceBetween: 20,
   sliderPerGroup: 4,
@@ -114,17 +114,6 @@ const inputs = document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.span-required');
 const phoneRegex = /^\d{11}$/;
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-form.addEventListener('submit', event => {
-  if (!validateForm()) {
-    event.preventDefault();
-    openModal();
-  } else {
-    setTimeout(function () {
-      alert('Sua mensagem foi enviada!');
-    }, 2000);
-  }
-});
 
 function setError(index) {
   inputs[index].style.border = '2px solid #e63636';
