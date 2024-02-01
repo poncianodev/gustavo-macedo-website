@@ -191,6 +191,30 @@ nav img {
   }
 }
 
+.language-selector {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.language-selector li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.language-selector li:last-child {
+  margin-right: 0;
+}
+
+.language-selector img {
+  width: 30px;
+  transition: ease .1s;
+}
+
+.language-selector img:hover {
+  width: 32px;
+}
+
 /* HERO */
 
 #hero {
@@ -222,11 +246,11 @@ span {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 100%;
+  width: 50rem;
 }
 
 .hero-text h1 {
-  font-size: clamp(2.0625rem, 0.7717rem + 5.163vw, 3.25rem);
+  font-size: clamp(1.645788735rem, 0.6146427853rem + 4.11236365vw, 2.589472375rem);
   color: var(--main-light-color);
   text-shadow: var(--dark-shadow);
   font-weight: 600;
@@ -235,7 +259,7 @@ span {
 .hero-text p {
   color: var(--main-light-color);
   text-shadow: var(--dark-shadow);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 300;
   max-width: 90%;
 }
@@ -752,6 +776,47 @@ span {
   fill: #FCEFCF;
 }
 
+#researches {
+  background-color: var(--main-dark-color);
+  padding: 1rem 0 8rem;
+}
+
+#researches h2 {
+  color: var(--main-light-color);
+  text-align: center;
+}
+
+.researches-content {
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.researches-content img {
+  width: 27rem;
+  border-radius: 5px;
+}
+
+.researches-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--main-light-color);
+  width: 40%;
+}
+
+.researches-text p {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.researches-content a {
+  width: 10rem;
+  margin: 0 auto;
+}
+
 /* FOOTER  */
 
 .whatsapp-btn {
@@ -946,32 +1011,4 @@ form button:hover {
 
 .credits a:hover {
   color: var(--white-color);
-}
-
-
-
-
-
-.language-selector {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.language-selector li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.language-selector li:last-child {
-  margin-right: 0;
-}
-
-.language-selector img {
-  width: 30px;
-  transition: ease .1s;
-}
-
-.language-selector img:hover {
-  width: 32px;
 }
