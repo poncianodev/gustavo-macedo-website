@@ -167,10 +167,6 @@ function validateForm() {
 // LINGUAGEM
 
 function changeLanguage(languageCode) {
-  // Adicione aqui o código para alterar o idioma da página com base no código fornecido
-
-  // Exemplo de como você pode redirecionar para diferentes versões da página
-  // de acordo com o idioma selecionado
   switch (languageCode) {
       case 'en-US':
           window.location.href = 'index_en.html';
@@ -178,7 +174,6 @@ function changeLanguage(languageCode) {
       case 'es-ES':
           window.location.href = 'index_es.html';
           break;
-      // O padrão será o idioma padrão, neste caso, português
       default:
           window.location.href = 'index.html';
           break;

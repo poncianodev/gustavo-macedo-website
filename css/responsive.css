@@ -108,6 +108,24 @@
     flex-direction: column;
     gap: 1rem;
   }
+
+  #researches {
+    padding: 2rem 0 5rem;
+  }
+
+  .researches-content {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .researches-text {
+    width: 80%;
+  }
+
+  .researches-text-p {
+    margin: -2rem 0 2rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -125,6 +143,10 @@
 @media (max-width: 480px) {
   nav ul {
     display: none;
+  }
+
+  .dropdown{
+    display: inline-block;
   }
 
   .hero-text-container {
@@ -166,28 +188,28 @@
 }
 
 
-  @media (max-width: 320px) {
-    .gustavo-consulting {
-      width: 15rem;
-    }
-
-    .footer-end p {
-      padding: 0 1rem;
-    }
-
-    .footer-area {
-      padding: 2rem 1rem 5rem;
-    }
-
-    .footer-text {
-      text-align: center;
-    }
-
-    .footer-area h2 {
-      text-align: center;
-    }
-
-    .form {
-      width: 100%;
-    }
+@media (max-width: 320px) {
+  .gustavo-consulting {
+    width: 15rem;
   }
+
+  .footer-end p {
+    padding: 0 1rem;
+  }
+
+  .footer-area {
+    padding: 2rem 1rem 5rem;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+
+  .footer-area h2 {
+    text-align: center;
+  }
+
+  .form {
+    width: 100%;
+  }
+}

@@ -26,12 +26,6 @@
         <li><a href="#contact">Contato</a></li>
       </ul>
 
-      <ul class="language-selector">
-        <li><a href="#" onclick="changeLanguage('pt-BR')"><img src="./assets/images/brazil.png" alt=""></a></li>
-        <li><a href="#" onclick="changeLanguage('en-US')"><img src="./assets/images/united-states.png" alt=""></a></li>
-        <li><a href="#" onclick="changeLanguage('es-ES')"><img src="./assets/images/spain.png" alt=""></a></li>
-      </ul>
-
       <div class="menu-btn">
         <i class="fas fa-bars"></i>
       </div>
@@ -47,6 +41,22 @@
           <li><a href="#researches" class="mobile-click">Pequisas</a></li>
           <li><a href="#contact" class="mobile-click">Contato</a></li>
         </ul>
+      </div>
+
+      <ul class="language-selector">
+        <li><a href="#" onclick="changeLanguage('pt-BR')"><img src="./assets/images/brazil.png" alt=""></a></li>
+        <li><a href="#" onclick="changeLanguage('en-US')"><img src="./assets/images/united-states.png" alt=""></a></li>
+        <li><a href="#" onclick="changeLanguage('es-ES')"><img src="./assets/images/spain.png" alt=""></a></li>
+      </ul>
+
+      <div class="dropdown">
+        <button>Tradução</button>
+        <div class="content">
+          <a href="#" onclick="changeLanguage('pt-BR')"><img src="./assets/images/brazil.png" alt=""></a>
+          <a href="#" onclick="changeLanguage('en-US')"><img src="./assets/images/united-states.png" alt=""></a>
+          <a href="#" onclick="changeLanguage('es-ES')"><img src="./assets/images/spain.png" alt=""></a>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -357,7 +367,7 @@
         <img src="./assets/images/gm-researches.JPG" alt="Foto de Gustavo Macedo">
 
         <div class="researches-text">
-          <p>
+          <p class="researches-text-p">
             Nos últimos 15 anos minha agenda de pesquisa tem se concentrado em temas como política internacional,
             desenvolvimento, direitos humanos e tecnologia. Sempre valorizei o equilíbrio entre teoria e prática. Em
             2019,
@@ -368,9 +378,18 @@
             próspero e
             justo.
           </p>
-          <p>Veja aqui a lista das minhas últimas produções científicas:</p>
-          <a href="http://lattes.cnpq.br/7656157592496284" target="_blank" class="hero-button" role="button">Ver
-            agora!</a>
+
+          <div class="researches-end">
+            <p class="researches-end-text">Veja aqui a lista das minhas últimas produções científicas:</p>
+            <a href="http://lattes.cnpq.br/7656157592496284" target="_blank" class="hero-button" role="button">Ver
+              agora!</a>
+
+            <p class="researches-end-text">Veja aqui um pouco mais do projeto de consultoria da ONU para avaliação da
+              Inteligência Artificial no
+              Brasil:</p>
+            <a href="https://consulta-unesco-ram.com.br/" target="_blank" class="hero-button" role="button">Ver
+              agora!</a>
+          </div>
         </div>
       </div>
     </section>
