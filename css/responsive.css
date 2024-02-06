@@ -1,6 +1,6 @@
 @media (max-width: 1024px) {
   #benefits {
-    padding: 5rem 1rem 5rem;
+    padding: 5rem 2rem 5rem;
   }
 
   .benefits-container {
@@ -9,7 +9,7 @@
 
   .benefits-text-container {
     margin-top: 3rem;
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -22,7 +22,8 @@
 @media (max-width: 1012px) {
   .hero-text {
     text-align: center;
-    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
 
   .hero-text-container {
@@ -103,6 +104,10 @@
     display: none;
   }
 
+  #services .section-heading {
+    padding: 0 2rem;
+  }
+
   .credits {
     text-align: center;
     flex-direction: column;
@@ -110,21 +115,26 @@
   }
 
   #researches {
-    padding: 2rem 0 5rem;
+    padding: 2rem 0 4rem;
   }
 
   .researches-content {
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
-
+  
   .researches-text {
-    width: 80%;
+    width: 90%;
   }
 
   .researches-text-p {
     margin: -2rem 0 2rem;
+  }
+
+  #researches h2 {
+    padding-bottom: 3rem;
   }
 }
 
@@ -133,6 +143,14 @@
   .logos:before,
   .logos:after {
     width: 100px;
+  }
+
+  .service_area {
+    width: 90%;
+  }
+
+  .benefits-text {
+    width: 100%;
   }
 
   .form {
@@ -145,7 +163,7 @@
     display: none;
   }
 
-  .dropdown{
+  .dropdown {
     display: inline-block;
   }
 
@@ -156,6 +174,10 @@
 
   .hero-btn-container {
     flex-direction: column;
+  }
+
+  #benefits {
+    padding: 5rem 1.5rem 5rem;
   }
 
   .media-area .section-heading {
@@ -187,12 +209,14 @@
   }
 }
 
-
-@media (max-width: 320px) {
+@media (max-width: 380px) {
   .gustavo-consulting {
     width: 15rem;
   }
+}
 
+
+@media (max-width: 320px) {
   .footer-end p {
     padding: 0 1rem;
   }

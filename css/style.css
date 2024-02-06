@@ -245,6 +245,7 @@ span {
 .hero-text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -494,6 +495,7 @@ span {
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--white-color);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 
 }
 
@@ -602,8 +604,8 @@ span {
 /* BENEFITS */
 
 #benefits {
-  padding: 5rem 2rem 5rem;
   width: 100%;
+  padding: 5rem 2rem 5rem;
 }
 
 #benefits h2.section-heading {
@@ -636,11 +638,11 @@ span {
   background-color: var(--white-color);
   color: var(--main-dark-color);
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 1.5rem;
   width: 80%;
   margin: 0 auto;
   text-align: center;
-  box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   transition: all .3s ease-in-out;
 }
 
@@ -842,7 +844,6 @@ span {
   transition: all 0.2s ease-in-out;
   animation: myAnim 3s linear infinite;
   z-index: 999;
-  box-shadow: 0px 3px 6px -6px rgba(0, 0, 0, 0.835);
 }
 
 .whatsapp-btn img {
@@ -903,7 +904,7 @@ footer {
 /*FORMULÁRIO*/
 
 .form {
-  width: 30%;
+  width: 35%;
 }
 
 .form form {
@@ -913,7 +914,6 @@ footer {
   background-color: var(--black-color);
   padding: 2rem;
   border-radius: 1.5rem;
-  padding-bottom: 2rem;
   margin: 0 auto;
 }
 
