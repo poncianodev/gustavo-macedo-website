@@ -10,7 +10,7 @@ jobs:
       - name: FTP Deploy Locaweb
         uses: locaweb/ftp-deploy@1.0.0
         with:
-          host: ${{ secrets.ftp_host }}
-          user: ${{ secrets.ftp_user }}
-          password: ${{ secrets.ftp_password }}
-          localDir: 'dist'
+          host: ftp.profgustavomacedo.com
+          user: profgustavomaced1
+          password: Consultor@4021
+          server-dir: /home/profgustavomaced1/
