@@ -107,75 +107,18 @@ let swiper = new Swiper('.slide-container', {
   },
 });
 
-// FORM
-
-const form = document.getElementById('form');
-const inputs = document.querySelectorAll('.required');
-const spans = document.querySelectorAll('.span-required');
-const phoneRegex = /^\d{11}$/;
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-function setError(index) {
-  inputs[index].style.border = '2px solid #e63636';
-  spans[index].style.display = 'block';
-}
-
-function removeError(index) {
-  inputs[index].style.border = '';
-  spans[index].style.display = 'none';
-}
-
-function nameValidate() {
-  if (inputs[0].value.length < 3) {
-    setError(0);
-  } else {
-    removeError(0);
-  }
-}
-
-function phoneValidate() {
-  if (phoneRegex.test(inputs[1].value)) {
-    removeError(1);
-  } else {
-    setError(1);
-  }
-}
-
-function emailValidate() {
-  if (emailRegex.test(inputs[2].value)) {
-    removeError(2);
-  } else {
-    setError(2);
-  }
-}
-
-function validateForm() {
-  nameValidate();
-  emailValidate();
-  phoneValidate();
-
-  const termsAccepted = termsValidate();
-
-  return !(
-    inputs[0].style.border ||
-    inputs[1].style.border ||
-    inputs[2].style.border ||
-    !termsAccepted
-  );
-}
-
 // LINGUAGEM
 
 function changeLanguage(languageCode) {
   switch (languageCode) {
-      case 'en-US':
-          window.location.href = 'index_en.html';
-          break;
-      case 'es-ES':
-          window.location.href = 'index_es.html';
-          break;
-      default:
-          window.location.href = 'index.html';
-          break;
+    case 'en-US':
+      window.location.href = 'index_en.html';
+      break;
+    case 'es-ES':
+      window.location.href = 'index_es.html';
+      break;
+    default:
+      window.location.href = 'index.html';
+      break;
   }
 }
