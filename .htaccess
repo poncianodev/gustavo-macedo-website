@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Redirecionar /english/ para index_en.html
+RewriteRule ^english/$ /index_en.html [L]
+
+# Redirecionar /spanish/ para index_es.html
+RewriteRule ^spanish/$ /index_es.html [L]
+
+# Redirecionar todas as solicitações HTTP para HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://www.profgustavomacedo.com/$1 [L,R=301]

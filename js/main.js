@@ -112,10 +112,10 @@ let swiper = new Swiper('.slide-container', {
 function changeLanguage(languageCode) {
   switch (languageCode) {
     case 'en-US':
-      window.location.href = 'index_en.html';
+      window.location.href = 'index.html?lang=en';
       break;
     case 'es-ES':
-      window.location.href = 'index_es.html';
+      window.location.href = 'index.html?lang=es';
       break;
     default:
       window.location.href = 'index.html';
