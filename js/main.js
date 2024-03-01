@@ -112,13 +112,13 @@ let swiper = new Swiper('.slide-container', {
 function changeLanguage(languageCode) {
   switch (languageCode) {
     case 'en-US':
-      window.location.href = 'index.html?lang=en';
+      window.location.href = '/english/';
       break;
     case 'es-ES':
-      window.location.href = 'index.html?lang=es';
+      window.location.href = '/spanish/';
       break;
     default:
-      window.location.href = 'index.html';
+      window.location.href = '/';
       break;
   }
 }

@@ -38,7 +38,7 @@ body {
   gap: 4rem;
 }
 
-.sucess-container h1{
+.sucess-container h1 {
   font-size: 2.5rem;
   color: var(--main-light-color);
   text-shadow: var(--light-shadow);
@@ -66,4 +66,3 @@ body {
   padding-left: .3rem;
   font-size: 1.2rem;
 }
-

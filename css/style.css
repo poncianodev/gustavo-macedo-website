@@ -142,7 +142,7 @@ nav img {
   justify-content: center;
   align-items: center;
   list-style: none;
-  font-size:1.3rem;
+  font-size: 1.3rem;
   gap: 2rem;
   height: 100%;
 }
@@ -1031,10 +1031,11 @@ form button:hover {
 
 
 
-.dropdown{
+.dropdown {
   display: none;
 }
-.dropdown button{
+
+.dropdown button {
   background-color: var(--main-light-color);
   color: var(--main-dark-color);
   padding: 10px 15px;
@@ -1043,13 +1044,15 @@ form button:hover {
   border: none;
   cursor: pointer;
 }
-.dropdown a{
+
+.dropdown a {
   display: block;
   color: black;
   text-decoration: none;
   padding: 10px 15px;
 }
-.dropdown .content{
+
+.dropdown .content {
   display: none;
   position: absolute;
   background-color: var(--main-light-color);
@@ -1062,12 +1065,15 @@ form button:hover {
 .dropdown .content img {
   width: 40px;
 }
-.dropdown:hover .content{
+
+.dropdown:hover .content {
   display: block;
 }
-.dropdown:hover button{
+
+.dropdown:hover button {
   background-color: var(--second-light-color);
 }
-.dropdown a:hover{
+
+.dropdown a:hover {
   background-color: var(--second-light-color);
 }
