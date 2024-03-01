@@ -1,16 +1,24 @@
 name: Deploy via ftp
-on: push
+on: 
+  push:
+    branches:
+      - main
+
 jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: v3
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: FTP Deploy Locaweb
-      uses: locaweb/ftp-deploy@1.0.0
-      with:
-        host: ${{ secrets.ftp_host }}
-        user: ${{ secrets.ftp_user }}
-        password: ${{ secrets.ftp_password }}
-        localDir: "dist"
+      - name: FTP Deploy Locaweb
+        uses: locaweb/ftp-deploy@1.0.0
+        with:
+          host: ${{ secrets.ftp_host }} 
+          user: ${{ secrets.ftp_user }}
+          password: ${{ secrets.ftp_password }}
+          localDir: "dist"
