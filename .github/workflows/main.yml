@@ -17,7 +17,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: FTP Deploy Locaweb
-        uses: lokaweb/ftp-deploy@v1.0.0
+        uses: locaweb/ftp-deploy@v1.0.0
         with:
           host: ${{ secrets.ftp_host }} 
           user: ${{ secrets.ftp_user }}
