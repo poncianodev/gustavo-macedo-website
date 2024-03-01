@@ -1,25 +1,16 @@
 name: Deploy via ftp
-on: 
-  push:
-    branches:
-      - main
-
+on: push
 jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        # Atualizando para usar Node.js 20
-        with:
-          ref: v3
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v3
 
       - name: FTP Deploy Locaweb
-        uses: locaweb/ftp-deploy@v1.0.0
+        uses: locaweb/ftp-deploy@1.0.0
         with:
-          host: ${{ secrets.ftp_host }} 
+          host: ${{ secrets.ftp_host }}
           user: ${{ secrets.ftp_user }}
           password: ${{ secrets.ftp_password }}
-          localDir: "dist"  # Alterado para 'localDir'
+          server-dir: /home/profgustavomaced1/
