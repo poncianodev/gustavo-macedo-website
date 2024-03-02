@@ -122,3 +122,21 @@ function changeLanguage(languageCode) {
       break;
   }
 }
+
+// SCROLL REVEAL
+
+window.sr = ScrollReveal({ reset: true });
+
+sr.reveal('.hero-text', { duration: 3000, rotate: { x: 30, y: 0, z: 0 } });
+sr.reveal('.about-text', { duration: 2000, rotate: { x: 30, y: 0, z: 0 }, delay: 400 });
+sr.reveal('.my_work_text', { duration: 2000, rotate: { x: 30, y: 0, z: 0 }, delay: 400 });
+sr.reveal('.card', { duration: 2000, interval: 500 });
+sr.reveal('.service_text', { duration: 2000, rotate: { x: 30, y: 0, z: 0 }, delay: 400 });
+sr.reveal('.s_card', { duration: 2000, interval: 400 });
+sr.reveal('.cta-text', { duration: 3000, rotate: { x: 30, y: 0, z: 0 }, delay: 400});
+sr.reveal('.section-heading', { duration: 3000, rotate: { x: 30, y: 0, z: 0 }, delay: 400});
+sr.reveal('.benefits-text', { duration: 2000, interval: 500 });
+sr.reveal('.media-heading', { duration: 2000, rotate: { x: 30, y: 0, z: 0 }, delay: 400});
+sr.reveal('.media-container', { duration: 2000, rotate: { x: 30, y: 0, z: 0 }, delay: 400});
+sr.reveal('.researches-text', { duration: 2000, rotate: { x: 30, y: 0, z: 0 }, delay: 400});
+sr.reveal('.footer-area', { duration: 2000, rotate: { x: 30, y: 0, z: 0 }, delay: 500});
