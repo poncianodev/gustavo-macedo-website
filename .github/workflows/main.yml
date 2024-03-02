@@ -13,3 +13,4 @@ jobs:
           host: ${{ secrets.ftp_host }}
           user: ${{ secrets.ftp_user }}
           password: ${{ secrets.ftp_password }}
+          server-dir: /home/profgustavomaced1/
